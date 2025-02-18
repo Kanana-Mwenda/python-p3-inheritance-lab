@@ -19,5 +19,6 @@ class Teacher(User):
         ]
 
     def teach(self):
-        return random.choice(self.knowledge)
+        random_index = random.randint(0, len(self.knowledge) -1)
+        return self.knowledge[random_index]
         
